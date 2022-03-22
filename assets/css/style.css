@@ -1,0 +1,102 @@
+/* Base CSS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+:root {
+  --defaultColor: #ff0000;
+  --scrollTrack: #fff;
+  --stickyBg:#fff;
+  --defaultHoverColor:#fd5050;
+  --headerBg:#00000080;
+  --tToB:#fff;
+}
+
+::-webkit-scrollbar {
+  width: 05px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollTrack) !important;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: var(--defaultColor) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--defaultHoverColor); 
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.theme_color {
+  color: var(--defaultColor) !important;
+}
+
+.theme_bg {
+  background-color: var(--defaultColor) !important;
+}
+
+.theme_border {
+  color: var(--defaultColor) !important;
+}
+
+.theme_button {
+  background-color: var(--defaultColor) !important;
+}
+
+.title_border {
+  height: 3px;
+  width: 50px;
+  background-color: var(--defaultColor);;
+}
+
+.text_justify {
+  text-align: justify;
+}
+
+
+
+
+/* Header */
+nav#myHeader {
+  position: absolute;
+  top: 66px;
+  width: 100%;
+  background: var(--headerBg);
+  z-index: 999;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  background: var(--stickyBg) !important;
+  width: 100% !important;
+}
+
+
+/* Footer CSS */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:var(--defaultColor);
+  color: var(--tToB);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: all .5s;
+}
+
+#myBtn:hover {
+  background-color: var(--defaultHoverColor);
+}
